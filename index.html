@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>	
 		<meta charset="utf-8">
@@ -49,10 +50,10 @@
 
 			<hr />
 			<form id="go-to-element" onsubmit="elementNavigationHandler(event);">
-				<label for"element-navigation">Jump to Element</label>
+				<label for="element-navigation">Jump to Element</label>
 				<br />
 				<select name="element-navigation" id="element-navigation">
-						<option value="example-html-elements"></option>
+						<option value="example-html-elements" label="Element"></option>
 						<option value="a">a</option>
 						<option value="abbr">abbr</option>
 						<option value="address">address</option>
@@ -170,7 +171,7 @@
 			<h4><a href="#abbr"><code>&lt;abbr&gt;</code></a></h4>
 			<p>
 				The HTML Abbreviation element <code>&lt;abbr&gt;</code> represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation.
-				</br ><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr">More at MDN →</a>
+				<br><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr">More at MDN →</a>
 			</p>
 			<details open>
 				<summary>Example</summary>
@@ -241,7 +242,7 @@
 			<a name="audio"></a>
 			<h4><a href="#audio"><code>&lt;audio&gt;</code></a></h4>
 			<p>
-				The HTML <code>&lt;audio&gt;</code> element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the <source> element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream.
+				The HTML <code>&lt;audio&gt;</code> element is used to embed sound content in documents. It may contain one or more audio sources, represented using the <code>src</code> attribute or the <code>&lt;source&gt;</code> element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream.
 				<br />
 				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">More at MDN →</a>
 			</p>
@@ -388,7 +389,7 @@
 			<a name="data"></a>
 			<h4><a href="#data"><code>&lt;data&gt;</code></a></h4>
 			<p>
-				The HTML <code>&lt;data&gt;</code> element links a given content with a machine-readable translation. If the content is time- or date-related, the <time> element must be used.
+				The HTML <code>&lt;data&gt;</code> element links a given content with a machine-readable translation. If the content is time- or date-related, the <code>&lt;time&gt;</code> element must be used.
 				<br />
 				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data">More at MDN →</a>
 			</p>
@@ -418,7 +419,7 @@
 			<details open>
 				<summary>Example</summary>
 				<section>
-					<label for="beverage-choice">Favorite hot beverage:</label>
+					<label for="beverage-choice-input">Favorite hot beverage:</label>
 					<input list="beverage-choice" id="beverage-choice-input" name="beverage-choice" />
 					<datalist id="beverage-choice">
 						<option value="Aleberry">
@@ -610,7 +611,7 @@
 			<a name="label"></a>
 			<a name="legend"></a>
 			<h4><a href="#fieldset"><code>&lt;fieldset&gt;</code></a></h4>
-			<p>Also: <a href="#label"><code>&lt;label&gt;</code>, <a href="#legend"><code>&lt;legend&gt;</code></a>
+			<p>Also: <a href="#label"><code>&lt;label&gt;</code></a>, <a href="#legend"><code>&lt;legend&gt;</code></a>
 			<p>
 				The HTML <code>&lt;fieldset&gt;</code> element is used to group several controls as well as labels (<code>&lt;label&gt;</code>) within a web form.
 				<br />
@@ -662,7 +663,7 @@
 			<a name="figcaption"></a>
 			<a name="img"></a>
 			<h4><a href="#figure"><code>&lt;figure&gt;</code></a></h4>
-			<p>Also: <a href="#figcaption"><code>&lt;figcaption&gt;</code>, <a href="#img"><code>&lt;img&gt;</code></a>
+			<p>Also: <a href="#figcaption"><code>&lt;figcaption&gt;</code></a>, <a href="#img"><code>&lt;img&gt;</code></a>
 			<p>
 				The HTML <code>&lt;figure&gt;</code> (Figure With Optional Caption) element represents self-contained content, potentially with an optional caption, which is specified using the (<code>&lt;figcaption&gt;</code>) element.
 				<br />
@@ -717,7 +718,7 @@
 							</li>
 							<li>
 								<label for="message">Message</label><br />
-								<textarea id="message" required placeholder="Ahoy!"/></textarea>
+								<textarea id="message" required placeholder="Ahoy!"></textarea>
 							</li>
 						
 							<li>
@@ -871,8 +872,7 @@
 				<section>
 					<hgroup>
 						<h1>An h1 element</h1>
-						<h2>An h2 element</h2>
-						<h3>An h3 element</h3>
+						<p>A p element</p>
 					</hgroup>
 					<p>A paragraph of text following an hgroup element.</p>
 				</section>
@@ -984,7 +984,7 @@
 			<details open>
 				<summary>Example</summary>
 				<section>
-					<input type="color" id="input-type-color" name="input-type-color" value="color" />
+					<input type="color" id="input-type-color" name="input-type-color" value="#990000" />
 					<label for="input-type-color">Input Type=color</label> 
 				</section>
 			</details>
@@ -1002,7 +1002,7 @@
 				<summary>Example</summary>
 				<section>
 					<label for="input-type-date">Input Type=date</label>
-					<input type="date" id="input-type-date" name="input-type-date" min="2001-01-01" max="2020-01-01" placeholder="2001-01-01">
+					<input type="date" id="input-type-date" name="input-type-date" min="2001-01-01" max="2020-01-01">
 				</section>
 			</details>
 			<aside></aside>
@@ -1020,7 +1020,7 @@
 				<summary>Example</summary>
 				<section>
 					<label for="input-type-datetime-local">Input Type=datetime-local</label>
-					<input type="datetime-local" id="input-type-datetime-local" name="input-type-datetime-local" min="2001-01-01" max="2020-01-01" placeholder="2001-01-01T16:00:00">
+					<input type="datetime-local" id="input-type-datetime-local" name="input-type-datetime-local" min="2001-01-01T00:00:00" max="2020-01-01T23:59:59">
 				</section>
 			</details>
 			<hr />
@@ -1071,7 +1071,7 @@
 				<summary>Example</summary>
 				<section>
 					<label for="input-type-image">Input Type=image</label>
-					<input type="input-type-image" id="input-type-image" alt="Image Button" src="/media/examples/login-button.png">
+					<input type="image" id="input-type-image" alt="Image Button" src="/media/examples/login-button.png">
 				</section>
 			</details>
 			<hr />
@@ -1268,7 +1268,7 @@
 				<summary>Example</summary>
 				<section>
 					<p>A paragraph of text preceeding an <code>&lt;ins&gt;</code> element.</p>
-					<ins cite="TODO" datetime="2018-05">
+					<ins cite="TODO" datetime="2018-05-01T00:00:00Z">
 						<p>A paragraph of text within an <code>&lt;ins&gt;</code> element.</p>
 					</ins>
 					<p>A paragraph of text following an <code>&lt;ins&gt;</code> element.</p>
@@ -1348,11 +1348,7 @@
 			<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">More at MDN →</a></p>
 			<details open>
 				<summary>Example</summary>
-				<section>
-					<main>
-						<p>A main element</p>
-					</main>
-				</section>
+				<p>Most of this document is in a <code>&lt;main&gt;</code> element.  Only one visible <code>&lt;main&gt;</code> element is allowed.</p>
 			</details>
 			<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">More at MDN →</a></aside>
 			<hr />
@@ -1376,7 +1372,7 @@
 						<area shape="rect" coords="184,56,192,64" alt="Bird 3" href="#area-bird-3">
 						<area shape="rect" coords="140,116,178,138" alt="Bench" href="#area-bench">
 					</map>
-					<img width="320px" usemap="#areamap" src="./images/undraw-through-the-park.svg" alt="Through the Park" />
+					<img width="320" usemap="#areamap" src="./images/undraw-through-the-park.svg" alt="Through the Park" />
 					<figcaption>Illustration by <a href="https://twitter.com/undraw_co">Katerina Limpitsouni</a> on <a href="https://undraw.co">unDraw</a>.
 					</figcaption>
 				</figure>	
@@ -1563,7 +1559,7 @@
 				<section>
 					<figure>
 					<picture>
-						<source srcset="./images/matthew-howell-uYoClFUGvkk-unsplash.jpg" media="(min-width: 600px)" title="A wave crashing on the shore in Cape Henlopen State Park, DE" alt="A wave crashing on the shore in Cape Henlopen State Park, DE.">
+						<source srcset="./images/matthew-howell-uYoClFUGvkk-unsplash.jpg" media="(min-width: 600px)" title="A wave crashing on the shore in Cape Henlopen State Park, DE">
 							<img src="./images/matthew-howell-uYoClFUGvkk-unsplash-small.jpg" title="A wave crashing on the shore in Cape Henlopen State Park, DE" alt="A wave crashing on the shore in Cape Henlopen State Park, DE.">
 					</picture>
 					<figcaption>This example uses the picture element to display a higher resolution image to wider viewports (> 600 pixels).</figcaption>
@@ -1687,7 +1683,7 @@
 				<summary>Example</summary>
 				<section>
 					<label for="pet-select">Choose a pet:</label>
-					<select name="pets" id="pet-select">
+					<select name="pets" id="pet-select-2">
 						<option value="">--Please choose an option--</option>
 						<option value="dog">Dog</option>
 						<option value="cat">Cat</option>
@@ -1720,7 +1716,7 @@
 			<a name="span"></a>
 			<h4><a href="#span"><code>&lt;span&gt;</code></a></h4>
 			<p>
-				The HTML <span> element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang.
+				The HTML <code>&lt;span&gt;</code> element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang.
 				<br />
 				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">More at MDN →</a>
 			</p>
@@ -1752,7 +1748,7 @@
 			<a name="sub"></a>
 			<h4><a href="#sub"><code>&lt;sub&gt;</code></a></h4>
 			<p>
-				The HTML Subscript element (<sub>) specifies inline text which should be displayed as subscript for solely typographical reasons.
+				The HTML Subscript element (<code>&lt;sub&gt;</code>) specifies inline text which should be displayed as subscript for solely typographical reasons.
 				<br />
 				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub">More at MDN →</a>
 			</p>
@@ -1818,6 +1814,11 @@
 				<section>
 					<table>
 						<caption>A table caption element</caption>
+						<colgroup>
+							<col>
+							<col span="2" class="batman">
+							<col span="2" class="flash">
+						</colgroup>
 						<thead>
 							<tr>
 							  <th>th 1</th>
@@ -1827,11 +1828,6 @@
 							  <th>th2</th>
 							</tr>
 						</thead>
-						<colgroup>
-							<col>
-							<col span="2" class="batman">
-							<col span="2" class="flash">
-						</colgroup>
 						<tr>
 							<td> </td>
 							<th scope="col">Batman</th>
@@ -1851,7 +1847,7 @@
 						<tfoot>
 							<tr>
 							  <td>Footer content 1</td>
-							  <td>Footer content 2</td>
+							  <td colspan="4">Footer content 2</td>
 							</tr>
 						  </tfoot>
 					</table>					
@@ -1870,7 +1866,7 @@
 			<details open>
 				<summary>Example</summary>
 				<section>
-					<p>At <time datetime="15:30:08">around 3:30PM UTC</time> on <time datetime="292277026596-12-04">Sunday, 4 December in the year 292277026596</time> 64-bit Unix timestamps will no longer work. We have a little more than thirteen billion years to solve the problem.</p>
+					<p>At <time datetime="03:14:07">around 3:14AM UTC</time> on <time datetime="2038-01-19">Tuesday, 19 January in the year 2038</time> 32-bit Unix timestamps will no longer work.</p>
 				</section>
 			</details>
 			<hr />
@@ -2027,7 +2023,7 @@
 			<p>All photographs are from <a href="https://www.matthewhowell.net">Matthew Howell</a>, available for use, for free at <a href="https://unsplash.com/@matthewhowell">Unsplash</a>.</p>
 			
 		</section>
-		
+
 	<script>
 		// a handler for the example <form> element submit
 		const formElementHandler = function(event) {
